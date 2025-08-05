@@ -1,0 +1,44 @@
+# Python (Django backend)
+__pycache__/
+*.py[cod]
+*__init__.py
+*.pyo
+*.pyd
+*.pyc
+*.log
+*.pot
+*.sqlite3
+db.sqlite3
+venv/
+.env
+
+# Django migrations (optional)
+# **/migrations/
+
+# VSCode
+.vscode/
+
+# macOS
+.DS_Store
+
+# Node (React frontend)
+frontend/node_modules/
+frontend/build/
+frontend/.env
+frontend/.DS_Store
+
+# Logs
+*.log
+
+# Coverage & testing
+htmlcov/
+coverage.xml
+*.cover
+.cache/
+.tox/
+pytest_cache/
+
+# Editors and backups
+*.bak
+*.swp
+*.swo
