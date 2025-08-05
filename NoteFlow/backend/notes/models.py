@@ -3,7 +3,12 @@ from django.conf import settings
 
 class Tag(models.Model):
     name = models.CharField(max_length=50, unique=True)
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE, related_name="tags")
+    # user = models.ForeignKey(CustomUser, on_delete=models.CASCADE, related_name="tags")
 
+
+    class Meta:
+        unique_together = ('name', 'user')
     def __str__(self):
         return self.name
 
