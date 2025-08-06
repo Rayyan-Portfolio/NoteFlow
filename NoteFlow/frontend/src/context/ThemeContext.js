@@ -9,11 +9,15 @@ export const ThemeProvider = ({ children }) => {
 
   useEffect(() => {
     const root = document.documentElement;
+
+    // Always remove both first to avoid conflicts
+    root.classList.remove("dark-theme", "light-theme");
+
     if (isDark) {
       root.classList.add("dark-theme");
       localStorage.setItem("theme", "dark");
     } else {
-      root.classList.remove("dark-theme");
+      root.classList.add("light-theme");
       localStorage.setItem("theme", "light");
     }
   }, [isDark]);

@@ -1,0 +1,77 @@
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* 🎨 Theme Variables */
+html.light-theme {
+  --bg-color: linear-gradient(
+    to bottom right,
+    #ffffff,
+    #dd00ff
+  ); /* lighter purple gradient */
+  --text-color: #000;
+}
+
+html.dark-theme {
+  --bg-color: linear-gradient(
+    to bottom right,
+    #a039e0,
+    #280a4e
+  ); /* deeper purple gradient */
+  --text-color: #fff;
+}
+
+/* 🌍 Base Resets */
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  width: 100%;
+  font-size: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  background: var(--bg-color); /* 💡 Now this supports gradient */
+  color: var(--text-color);
+}
+
+/* 🧼 Container Cleanup */
+.container,
+.container-fluid {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+/* ✨ Transparent Navbar/Footer */
+.navbar,
+footer {
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  transition: background-color 0.3s ease-in-out;
+}
+/* d-flex flex-column */
+
+.card-dark {
+  background-color: rgba(0, 0, 0, 0.3) !important;
+  color: #fff;
+}
+
+.card-light {
+  background-color: rgba(255, 255, 255, 0.3) !important;
+  color: #000;
+}
+
+.card-dark .card-title,
+.card-dark .card-text {
+  color: #fff;
+}
+
+.card-light .card-title,
+.card-light .card-text {
+  color: #000;
+}
