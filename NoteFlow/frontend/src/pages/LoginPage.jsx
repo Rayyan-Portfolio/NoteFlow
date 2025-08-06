@@ -1,6 +1,4 @@
-// /src/pages/LoginPage.jsx
-
-import React, { useState } from "react";
+import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import authService from "../services/authService";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -31,22 +29,6 @@ const LoginPage = () => {
       toast.error(err.response?.data?.message || "Login failed");
     }
   };
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault();
-
-  //   if (formData.password.length < 6) {
-  //     return toast.error("Password must be at least 6 characters.");
-  //   }
-
-  //   try {
-  //     const data = await loginUser(formData);
-  //     localStorage.setItem("token", data.token);
-  //     toast.success("Login successful!");
-  //     navigate("/");
-  //   } catch (err) {
-  //     toast.error(err.response?.data?.message || "Login failed");
-  //   }
-  // };
 
   return (
     <div className="container d-flex align-items-center justify-content-center min-vh-100">

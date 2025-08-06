@@ -1,39 +1,3 @@
-// // // src/services/authService.js
-// // import axios from "axios";
-
-// // const API_URL = "http://127.0.0.1:8000/api/users/login/"; // trailing slash is IMPORTANT
-
-// // const login = async (email, password) => {
-// //   const response = await axios.post(API_URL, { email, password });
-// //   localStorage.setItem("token", response.data.token);
-// // };
-
-// // const authService = {
-// //   login,
-// // };
-
-// // export default authService;
-
-// import axios from "axios";
-
-// export const registerUser = async (formData) => {
-//   const response = await axios.post(
-//     "http://127.0.0.1:8000/api/users/register/",
-//     formData
-//   );
-//   return response.data;
-// };
-
-// export const loginUser = async (formData) => {
-//   const response = await axios.post(
-//     "http://127.0.0.1:8000/api/users/login/",
-//     formData
-//   );
-//   return response.data;
-// };
-
-// src/services/authService.js
-
 import axios from "axios";
 
 const API_BASE_URL = "http://127.0.0.1:8000/api/users"; // base only once
