@@ -1,7 +1,8 @@
 // /services/noteService.js
 import axios from "axios";
-const API_BASE_URL = "http://127.0.0.1:8000/api/notes";
-
+// const API_BASE_URL = "http://127.0.0.1:8000/api/notes";
+//const API_BASE_URL = "https://noteflow-backend-latest.onrender.com/api/notes";
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL_NOTES;
 // Set auth headers
 const getAuthHeaders = () => ({
   headers: {
