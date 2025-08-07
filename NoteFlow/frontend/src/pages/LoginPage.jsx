@@ -23,6 +23,7 @@ const LoginPage = () => {
 
     try {
       await authService.login(formData.email, formData.password);
+      //localStorage.setItem("token", authService.login.data.token);
       toast.success("Login successful!");
       navigate("/");
     } catch (err) {

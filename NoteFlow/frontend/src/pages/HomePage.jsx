@@ -185,7 +185,7 @@ const HomePage = () => {
 
       {/* Contact Section */}
       <section id="contact" className="section-gradient px-3 mb-5">
-        <div className="container-fluid px-3 px-md-5">
+        <div className="container-fluid  px-md-5">
           <h2 className="text-center fw-bold mb-4">Contact Us</h2>
           <div className="row justify-content-center">
             <div className="col-md-8">

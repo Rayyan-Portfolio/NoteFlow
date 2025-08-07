@@ -9,7 +9,7 @@ const login = async (email, password) => {
   });
 
   // Save token for future use
-  localStorage.setItem("token", response.data.token);
+  localStorage.setItem("token", response.data.access);
   return response.data;
 };
 
