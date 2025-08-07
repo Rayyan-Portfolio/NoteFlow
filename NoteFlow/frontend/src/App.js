@@ -7,15 +7,16 @@ import RegisterPage from "./pages/RegisterPage";
 import HomePage from "./pages/HomePage";
 import NotesPage from "./pages/NotesPage";
 import ProtectedRoute from "./components/ProtectedRoute";
+import NotFoundPage from "./pages/NotFoundPage";
 function App() {
   return (
     <Router>
       <div className="container mt-5">
         <Routes>
+          <Route path="*" element={<NotFoundPage />} />
           <Route path="/login" element={<LoginPage />} />
           <Route path="/register" element={<RegisterPage />} />
-          <Route path="*" element={<HomePage />} />
-
+          <Route path="/" element={<HomePage />} />
           <Route
             path="/notes"
             element={
